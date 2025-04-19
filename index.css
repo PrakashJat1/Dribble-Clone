@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+body{
+    position: relative;
+}
+
+.arrow-btn-div{
+    position:sticky;
+    z-index: 1;
+    top: 700px;
+    left: 96%;
+}
+
+.arrow-btn{
+    position: static;
+}
+
 nav{
     margin: 0% 1% 0% 1%;
 }
@@ -35,10 +50,6 @@ nav{
     margin: 0% 2%;
 }
 
-.main-container{
-    /* padding: 5% 20% 0% 20%; */
-}
-
 
 .Discover{
     font-size:larger;
@@ -68,6 +79,8 @@ nav{
 .main-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 2%;
+    padding: 2% 5%;
 }
 
 .cart{
@@ -78,8 +91,9 @@ nav{
 }
 
 .cart-img{
-    width: 100%;
+    width: 130%;
     height: auto;
+    border-radius: 10%;
 }
 
 .cart-img2{
@@ -88,16 +102,13 @@ nav{
     border-radius: 50%;
 }
 
-/* .cart-flex{
-    display: flex;
-} */
 
 .cart-inner-flex{
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-
+    width: 120%;
 }
 
 .cart-bottom-left-flex{
@@ -116,3 +127,55 @@ nav{
     gap: 3px;
 }
 
+.signup-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:7% 0%;
+}
+
+.signup{
+    border-radius: 20%;
+    background-color: black;
+    color: aliceblue;
+    padding: 1% 2%;
+}
+
+.slideshow{
+    width: 100%;
+    scrollbar-width: none;
+}
+
+.slide-div{
+    display: inline-block;
+    flex-direction: column;
+    width: 16%;
+}
+
+.slide-img{
+    width: 100%;
+    height: auto;
+}
+
+.slide-cart{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.slide-cart > span{
+    margin: 5% 0%;
+    color: black;
+}
+
+.bottom-div{
+    margin: 2% 10%;
+    display: flex;
+    align-content: center;
+    gap: 5%;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
